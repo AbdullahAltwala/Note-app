@@ -6,8 +6,8 @@ export default function DetailsScreen({ navigation }) {
     return (
         <View style={styles.conatiner}>
         <Text style={styles.text}
-        onPress={() => alert("this is Details Screen")}
-        >Details Screen</Text>
+        onPress={() => alert("this is Notes Screen")}
+        >Notes Screen</Text>
      </View>
     );
   }

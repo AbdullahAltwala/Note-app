@@ -51,7 +51,7 @@ function Weclome({ navigation }) {
 
 function Auth() {
     return (
-
+     
         <Tab.Navigator
             initialRouteName={homeName}
             screenOptions={
@@ -65,15 +65,15 @@ function Auth() {
                             iconName = (focused ? 'home' : 'home-outline')
 
                         } else if (rn == notesName) {
-                            iconName = (focused ? 'list' : 'list-outline')
+                            iconName = (focused ? 'clipboard' : 'clipboard-outline')
 
                         } else if (rn == settingsScreen) {
-                            iconName = (focused ? 'settings' : 'settings-outline')
+                            iconName = (focused ? 'list' : 'list-outline')
                         }
                         return <Ionicons name={iconName} size={25} color={color} />
                     },
                     tabBarStyle: {
-                        height: 65
+                        height: 55
                     },
                     tabBarActiveTintColor: '#465bd8',
                     tabBarInactiveTintColor: 'grey',
@@ -90,6 +90,6 @@ function Auth() {
             <Tab.Screen name={homeName} component={HomeScreen} />
             <Tab.Screen name={settingsScreen} component={SettingsScreen} />
         </Tab.Navigator>
-
+       
     );
 }
