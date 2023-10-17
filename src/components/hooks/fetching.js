@@ -1,7 +1,9 @@
+
+
 import  React,{useEffect, useState} from 'react';
 import {ActivityIndicator, FlatList, Text, View } from 'react-native';
 import styles from '../styles/homeScreen';
-
+import Card from '../hooks/card';
 //this line for identifying some wierd words in api fetches
 let expression = /&quot;|&#039;|&Uumll;|&iacute;|&amp;'/g;
 
