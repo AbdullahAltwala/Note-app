@@ -12,6 +12,8 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 3,
         elevation: 5, // for Android
+        width:"100%",
+        height:300
       },
       cardText: {
         fontSize: 18,
@@ -24,11 +26,12 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         width:"80%",
         
+        
       },
       showAnswerButtonText: {
         color: 'white',
         textAlign: 'center',
-        fontSize: 16,
+        fontSize: 18,
         
       },
       favoriteButton: {
@@ -39,7 +42,20 @@ const styles = StyleSheet.create({
       },
       row:{
         flexDirection:"row",
-        justifyContent:'center'
+        justifyContent:'center',
+        
+      },
+      box:{
+        flex:1,
+        margin:10,
+        
+      },
+      Text:{
+        fontSize:20,
+      },
+      hidden:{
+        color:"white"
       }
+
   });
   export default styles
