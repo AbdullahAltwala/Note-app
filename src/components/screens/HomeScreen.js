@@ -7,12 +7,18 @@ const HomeScreen = ( {items} ) => {
 
       console.log(items)
     return (
+
         <SafeAreaView style={styles.container}>
             
-          <FetchMoives/>
+         
 
-        </SafeAreaView>
 
+
+     <SafeAreaView style={styles.container}>
+         <FetchQuestion/>
+     </SafeAreaView>
+      
+    
 
     );
 }
