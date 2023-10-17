@@ -5,6 +5,11 @@ const styles = StyleSheet.create({
         flex: 1,
        margin:10,
     },
+    test:{
+        backgroundColor: "salmon",
+        margin: 10,
+        padding:4,
+    }
 
 })
 
