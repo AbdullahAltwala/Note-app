@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 3,
         elevation: 5, // for Android
-        width:"100%",
+        width:"97%",
         height:300
       },
       cardText: {

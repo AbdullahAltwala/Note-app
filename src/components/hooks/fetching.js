@@ -15,7 +15,7 @@ export default function fetchQuestion() {
   
     const getQuestion = async () => {
       try {
-        const response = await fetch('https://opentdb.com/api.php?amount=1');
+        const response = await fetch('https://opentdb.com/api.php?amount=10');
         const json = await response.json();
        
         console.log(json.results)
@@ -49,8 +49,8 @@ export default function fetchQuestion() {
       if(item.type == "boolean"){
        return(
         <View style={styles.box}>
-          <Text style={styles.Text}>{answers[0].replace(expression, '')}</Text>
-          <Text style={styles.Text}>{answers[1].replace(expression, '')}</Text>
+          <Text style={styles.Text}>- {answers[0].replace(expression, '')}</Text>
+          <Text style={styles.Text}>- {answers[1].replace(expression, '')}</Text>
         </View>
        
         );
@@ -58,10 +58,10 @@ export default function fetchQuestion() {
       else{
         return(
            <View style={styles.box}>
-          <Text  style={styles.Text}>{answers[0].replace(expression, '')}</Text>
-            <Text style={styles.Text}>{answers[1].replace(expression , '')}</Text>
-            <Text style={styles.Text}>{answers[2].replace(expression , '')}</Text>
-            <Text style={styles.Text}>{answers[3].replace(expression , '')}</Text>
+            <Text style={styles.Text}>- {answers[0].replace(expression, '')}</Text>
+            <Text style={styles.Text}>- {answers[1].replace(expression , '')}</Text>
+            <Text style={styles.Text}>- {answers[2].replace(expression , '')}</Text>
+            <Text style={styles.Text}>- {answers[3].replace(expression , '')}</Text>
         </View>
         )
       }
