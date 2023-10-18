@@ -18,7 +18,7 @@ export default function fetchQuestion() {
         const response = await fetch('https://opentdb.com/api.php?amount=10');
         const json = await response.json();
        
-        console.log(json.results)
+        //console.log(json.results)
         setData(json.results);
       } catch (error) {
         console.error(error);
