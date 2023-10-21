@@ -7,19 +7,30 @@ import Card from '../hooks/card';
 //this line for identifying some wierd words in api fetches
 let expression = /&quot;|&#039;|&Uumll;|&iacute;|&amp;'/g;
 
-export default function fetchQuestion() {
-    
+export default function fetchQuestion(quiz) {
+    question=[{
+          "category":'---',
+          "correct_answer":quiz.answer,
+          "difficulty":'---',
+          "incorrect_answers":['---','---','---'],
+          "question":quiz.question,
 
+    }]
+   
     const [isLoading, setLoading] = useState(true);
     const [data, setData] = useState();
   
     const getQuestion = async () => {
       try {
-        const response = await fetch('https://opentdb.com/api.php?amount=10');
+        const response = await fetch('https://opentdb.com/api.php?amount=1');
         const json = await response.json();
        
         console.log(json.results)
-        setData(json.results);
+        let arr =[...json.results, ...question]
+        let m = [...new Set(arr)]
+        console.log(m);
+       
+        setData(m);
       } catch (error) {
         console.error(error);
       } finally {
