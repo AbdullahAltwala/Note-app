@@ -12,8 +12,8 @@ import HomeScreen from '../screens/HomeScreen';
 import NotesScreen from '../screens/NotesScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 const homeName = "Home"
-const notesName = "Notes"
-const settingsScreen = "Settings"
+const notesName = "Quiz"
+const settingsScreen = "Create Question"
 
 const Tab = createBottomTabNavigator()
 const Stack = createNativeStackNavigator()

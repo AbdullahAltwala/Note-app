@@ -55,7 +55,17 @@ const styles = StyleSheet.create({
       },
       hidden:{
         color:"white"
-      }
-
-  });
-  export default styles
+      },
+      choiceContainer: {
+        marginTop: 5,
+        borderWidth: 1,
+        borderColor: 'lightgray',
+        borderRadius: 5,
+        padding: 5,
+      },
+      choiceText: {
+        fontSize: 20,
+        marginLeft: 10,
+      },
+    });
+    export default styles
